@@ -1,0 +1,30 @@
+:root{
+    --font-header: "Poppins", sans-serif;
+    --font-body: "Roboto", sans-serif;
+    --font-card: "Hind", sans-serif;
+    --font-size-small: 1.1rem; /* CARD */
+    --font-size-small-medium: 1.1rem; /* NORMAL */
+    --font-size-medium: 1.3rem;
+    --font-size-medium-large: 1.8rem;
+    --font-size-large: 2.8rem;
+    --purple: #AE36F5;
+    --white: #ffffff;
+    --black: #0C0C0C;
+    --gray: #898989;
+    --shadow: #dad9d9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    font-family: var(--font-body);
+}
