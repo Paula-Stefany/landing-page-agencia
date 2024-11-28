@@ -3,7 +3,7 @@
     --font-body: "Roboto", sans-serif;
     --font-card: "Hind", sans-serif;
     --font-size-small: 1.1rem; /* CARD */
-    --font-size-small-medium: 1.1rem; /* NORMAL */
+    --font-size-small-medium: 1.2rem; /* NORMAL */
     --font-size-medium: 1.3rem;
     --font-size-medium-large: 1.8rem;
     --font-size-large: 2.8rem;
@@ -27,4 +27,84 @@ html{
 
 body{
     font-family: var(--font-body);
+}
+
+/* MOBILE */
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo-img{
+    width: 40px;
+}
+
+.header-logo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.logo-name{
+    font-size: var(--font-size-medium-large);
+    font-family: var(--font-header);
+    font-weight: 700;
+    color: var(--black);
+}
+
+#logo-detail{
+    color: var(--purple);
+}
+
+.nav-items{
+    background-color: var(--white);
+    position: fixed;
+    top: 85px;
+    width: 320px;
+    height: fit-content;
+    z-index: 1000;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    right: 0.7rem;
+    list-style: none;
+    padding: 2.5rem 0rem 2.5rem 0rem;
+    box-shadow: var(--shadow) 0px 4px 12px;
+    border-radius: 10px;
+    border-top: 5px solid var(--purple);
+    border-bottom: 5px solid var(--purple);
+}
+
+.nav-item{
+    font-family: var(--font-header);
+    font-size: var(--font-size-medium-large);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.bars{
+    width: 30px;
+    border: none;
+    outline: none;
+    justify-content: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+.bar{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--black);
+    border-radius: 4px;
 }
