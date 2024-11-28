@@ -12,10 +12,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Dev's Agency</title>
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="header" id="header">
+
+        <!-- HEADER LOGO -->
+        <div class="header-logo">
+            <a href="#header">
+                <img src="img/project-icon.svg" alt="logo" class="logo-img lazy-load" >
+                <span class="logo-name"><span id="logo-detail">Dev's</span> Agency</span>
+            </a>
+        </div>
+
+        <!-- HEADER NAV -->
+        <nav class="header-nav" id="header-nav" aria-label="navigation menu">
+            <ul class="nav-items" role="menu">
+                <li role="menuitem"><a href="#services" class="nav-item">Services</a></li>
+                <li role="menuitem"><a href="#why-choose-us" class="nav-item">Why choose us?</a></li>
+                <li role="menuitem"><a href="#our-team" class="nav-item">Our team</a></li>
+                <li role="menuitem"><a href="#our-values" class="nav-item">Our values</a></li>
+                <li role="menuitem"><a href="#depoiments" class="nav-item">Depoiments</a></li>
+                <li role="menuitem"><a href="#frequent-questions" class="nav-item">Frequent questions</a></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER MENU MOBILE -->
+        <button class="bars" id="bars" aria-espanded="false" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+    </header>
 </body>
 </html>
