@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    align-items: center;
 }
 
 .logo-img{
@@ -60,6 +61,14 @@ body{
 
 #logo-detail{
     color: var(--purple);
+}
+
+#header-nav{
+    display: none;
+}
+
+#header-nav.active{
+    display: block;
 }
 
 .nav-items{
@@ -99,6 +108,8 @@ body{
     display: flex;
     flex-direction: column;
     background: none;
+    height: fit-content;
+    cursor: pointer;
 }
 
 .bar{
@@ -107,4 +118,17 @@ body{
     height: 4px;
     background: var(--black);
     border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.bars.active .bar:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bars.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.bars.active .bar:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -6px);
 }
